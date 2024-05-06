@@ -17,9 +17,7 @@ const Tabla = ({ incomes }) => {
                         <tr key={i}>
                             <td>{brand.brand}</td>
                             <td>{brand.income}</td>
-
                         </tr>
-
                     ))}
                     <tr>
                         <p>Promedio Neto ${incomes.reduce((total, brand) => total + brand.income, 0) / incomes.length}</p>
