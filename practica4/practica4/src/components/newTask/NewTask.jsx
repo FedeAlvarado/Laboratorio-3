@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { InputGroup, Button, Form } from 'react-bootstrap'
 import PropTypes from 'prop-types'
+import './NewTask.css'
 
 const NewTask = ({ onHandleAddNewTask }) => {
     const [textTask, setTextTask] = useState('');
@@ -16,13 +17,15 @@ const NewTask = ({ onHandleAddNewTask }) => {
     return (
         <div>
             <InputGroup className="mb-3">
-                <Form.Control
+                <Form.Control 
+                    className='task-back'
                     placeholder="Add Task"
                     aria-describedby="basic-addon2"
+                    value={textTask}
                     onChange={handleNewTask}
-                    value={setTextTask}
+                    
                 />
-                <Button variant="outline-secondary" id="button-addon2" onClick={handleAddNewTask}>
+                <Button variant="light" id="button-addon2" onClick={handleAddNewTask}>
                     Add
                 </Button>
             </InputGroup>

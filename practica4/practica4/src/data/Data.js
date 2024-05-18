@@ -1,10 +1,12 @@
 export const listTask = [
     {
-        name: "task1",
+        id:0,
+        name: "Realizar el boton de eliminar",
         complete: false
     },
     {
-        name: "task2",
-        complete: true
+        id:1,
+        name: "Decirle a los profes de Lab3 que son grosos",
+        complete: false
     }
 ]
