@@ -5,6 +5,6 @@ export const listTask = [
     },
     {
         name: "task2",
-        complete: false
+        complete: true
     }
 ]

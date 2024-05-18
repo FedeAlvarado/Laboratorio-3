@@ -9,13 +9,17 @@ function App() {
   const [task, setTask] = useState(listTask);
   
   const addNewTask =  (onHandleAddNewTask) => {
-    
+    const taskData = { 
+      task: onHandleAddNewTask,
+      state: false      
+    };
+    setTask((e)=>[...e, taskData])
   }
 
 
   return (
     <>
-      <NewTask />
+      <NewTask onHandleAddNewTask={addNewTask}/>
 
       <Task
         tasks={task} />
